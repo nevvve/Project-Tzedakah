@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'manrope'; /*font 이름*/
+    font-style: 'normal'; /* font 스타일 정의 (기울임, 일반) */
+    font-weight: 400; /* font 굵기 정의 */
+    /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
+    src: url('./fonts/Manrope/Manrope-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'notosanskr'; /*font 이름*/
+    font-style: 'normal'; /* font 스타일 정의 (기울임, 일반) */
+    font-weight: 400; /* font 굵기 정의 */
+    src: url('./fonts/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: manrope,notosanskr;
+    background-color: rgb(247, 224, 215);
+    margin: 0px;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-navitem {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    font-weight: 700;
+}
+
+.main-navlogo {
+    height: 55px;
+    width: 135px;
+    border: 1px solid blue;
+}
+
+.main-navbar {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-footer {
+    border: 1px solid blue;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    bottom: 0px;
+    color: rgb(32, 32, 32);
+}
+.main-footer-item {
+    font-size: 13px;
+    padding: 0 20px 0 20px;
+}
+
+.main-footer-position {
+    margin-left: 18px;
+}
+
+
+.main-footer-line {
+    height: 40px;
+}
+
+/* 로그인 */
+.main-login{
+    height: 800px;
+}
+.login-back {
+    position: relative;
+    z-index: 1;
+}
+
+.login-back .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(https://images.unsplash.com/photo-1661450159193-633134194753?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==) center center;
+    opacity: .4;
+    width: 100%;
+    height:960px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+/* .loginbox{
+    width:350px;
+    height:600px;
+    background-color: aliceblue;
+    border-radius: 50px;
+} */
+
+footer{
+    bottom:0
+}
+.login-name{
+    font-size: 70px;
+    color:black;
+    font-weight: 700;
+    position: relative;
+    top:80px;
+    
+}
+.login-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    position: relative;
+    
+
+}
+.black{
+    color:black;
+}
+.loginboxitem{
+    width:350px;
+    height:600px;
+    border-radius: 50px;
+    position: absolute;
+    top:0px;
+}
+.loginbutton{
+}
