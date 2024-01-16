@@ -1,0 +1,10 @@
+.text-table{
+    display: felx;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.img_wrap {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
