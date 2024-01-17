@@ -19,11 +19,6 @@ body {
     margin: 0px;
 }
 
-.main-body {
-    display: flex;
-    flex-direction: column;
-}
-
 .main-navitem {
     text-decoration: none;
     color: rgb(32, 32, 32);
@@ -43,11 +38,55 @@ body {
     align-items: center;
 }
 
+.main-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid blue;
+    height: 600px;
+}
+
+.main-container-item {
+    font-size: 20px;
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+    border: 1px solid blue;
+    margin: 5px;
+}
+
+.main-banner {
+    background-color: #FFF;
+    border: 1px solid blue;
+}
+
+.main-padding-div {
+    height: 100px;
+    width: 317px;
+}
+
+.main-spinbanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.main-cardback {
+    background-color: rgb(247, 224, 215);
+    margin: 20px;
+}
+
 .main-footer {
     border: 1px solid blue;
     height: 280px;
     width: 100%;
-    position: absolute;
     justify-content: space-around;
     display: flex;
     flex-direction: column;
