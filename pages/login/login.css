@@ -19,11 +19,6 @@ body {
     margin: 0px;
 }
 
-.main-body {
-    display: flex;
-    flex-direction: column;
-}
-
 .main-navitem {
     text-decoration: none;
     color: rgb(32, 32, 32);
@@ -42,12 +37,10 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-
 .main-footer {
     border: 1px solid blue;
-    height: 300px;
+    height: 280px;
     width: 100%;
-    position: absolute;
     justify-content: space-around;
     display: flex;
     flex-direction: column;
@@ -68,16 +61,37 @@ body {
     height: 40px;
 }
 
+
+
 /* 로그인 */
+.login-a{
+    text-decoration: none;
+}
+.login-a:hover{
+    font-weight: 700;
+}
+.login-right{
+    float:right;
+    font-size:15px;
+    color:#222;
+}
+.-find{
+    font-size:15px;
+    color:#888;
+}
+
 .main-login{
     height: 800px;
+    background-color: white;
 }
 .login-back {
     position: relative;
-    z-index: 1;
+    background-color: azure;
+    width: 100%;
+    height:800px;
 }
 
-.login-back .bg {
+/* .login-back .bg {
     position: absolute;
     z-index: -1;
     top: 0;
@@ -91,7 +105,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 
-}
+} */
 /* .loginbox{
     width:350px;
     height:600px;
@@ -99,17 +113,26 @@ body {
     border-radius: 50px;
 } */
 
-footer{
+/* footer{
     bottom:0
-}
+} */
 .login-name{
     font-size: 70px;
     color:black;
     font-weight: 700;
-    position: relative;
-    top:80px;
+    position: absolute;
+    top:10px;
+    padding-bottom: 1.5em;
+    text-align: center;
     
 }
+.login-container{
+    height:880px;
+    max-width:420px;
+    width:100%;
+    padding:0 20px;
+}
+
 .login-center{
     display: flex;
     justify-content: center;
@@ -117,17 +140,39 @@ footer{
     flex-direction:column;
     position: relative;
     
+    
 
 }
-.black{
-    color:black;
+.login-box{
+    width:100%;
+    /* height: 54px; */
+    display: flex;
+    flex-direction: column;
 }
-.loginboxitem{
-    width:350px;
-    height:600px;
-    border-radius: 50px;
-    position: absolute;
-    top:0px;
+.login-input{
+    border: none !important;
+    border-bottom:1px solid #e5e5e5!important;
+    height:50px
 }
+
+
+
 .loginbutton{
+    font-size: 18px;
+    background-color:#f6f7f9;
+    text-align: center;
+    width:100%;
+    height: 54px;
+    border:1px;
+    border-radius: 10px;
+    margin:0.5em 0;
+    
+}
+.loginbutton:hover{
+    font-weight:600;
+    transform: scale(1.05)
+}
+.-find{
+    font-size:15px;
+    color:#888;
 }
