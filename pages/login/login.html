@@ -10,7 +10,7 @@
 <body>
     <nav class="main-navbar">
         <div>
-            <a href="index.html"><img class="main-navlogo" src="./img/image.png"></a>
+            <a href="index.html"><img class="main-navlogo" src="../../img/image.png"></a>
         </div>
         <div>
             <a class="main-navitem" href="#">ABOUT</a>
@@ -31,13 +31,13 @@
             <a class="main-navitem" href="#">LOGIN</a>
         </div>
     </nav>
-    <main class="main-login">
-        <div class="login-center">
+    <main>
+        <div class="main-login login-center">
             <div class ="login-name login-center">
                 Login
             </div>
             <div class="login-container">
-                <div class ="loginboxitem ">
+                <div class ="">
                     <div class="login-box">
                         <input type="email" placeholder="아이디" class="login-input">
                         <input type ="password" placeholder="비밀번호" class="login-input">
@@ -55,28 +55,21 @@
                         <a href="#" class="login-a login-right">회원가입</a>
                     </div>
 
-                    <hr>
-                </div>
+                    <hr class="login-hr">
+                </div>    
                 <div>
                     <div><h4>비회원일 경우, 주문번호로 조회가 가능합니다.</h4></div>
                     <div class="row">
-                        <div >
-                            <div>
-                                주문자명
-                                <input type="text" placeholder="주문자명을 입력하세요">
+                            <div class="login-box">
+                                <input type="email" placeholder="주문자명" class="login-input">
+                                <input type ="text" placeholder="주문번호" class="login-input">
+                                <input type ="password" placeholder="비회원 주문 패스워드" class="login-input">
                             </div>
-                            <div>
-                                주문번호
-                                <input type="text" placeholder="주문번호를 입력하세요">
-                            </div>
-                            <div>
-                                비회원주문 비밀번호
-                                <input type="password" placeholder="비밀번호를 입력하세요">
-                                
-                             </div>
                         </div>
-                        <div><button>주문조회하기</button></div>
+                        <div><button class="loginbutton">주문조회하기</button></div>
                     </div>
+                </div>
+                
                 </div>
             </div>
         </div>
@@ -84,14 +77,14 @@
     </main>
     <footer class="main-footer">
         <div class="main-footer-line">
-            <hr>
+            <!-- <hr> -->
         </div>
         <div>
             <img src="">
         </div>
         <div class="main-footer-item">
             <div>
-                <img class="main-navlogo" src="./img/image.png">
+                <img class="main-navlogo" src="../../img/image.png">
             </div>
             <p>
                 (주)체다카<br>
