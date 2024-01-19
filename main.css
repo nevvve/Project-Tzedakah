@@ -38,6 +38,52 @@ body {
     align-items: center;
 }
 
+.main-nav-menu {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.main-nav-menu li {
+    width: 100%;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+
+.main-nav-menu li:hover {
+    background-color: rgb(231, 172, 23);
+    color: #FFF;
+}
+
+.main-nav-menuitems {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+}
+
+.main-navbar-toggle {
+    display: none;
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+}
+
+@media screen and (max-width: 700px) {
+
+    .main-navitem {
+        display: none;
+    }
+
+    .main-navbar-toggle {
+        display: block;
+    }
+
+    .main-nav-menu.active {
+        display: flex;
+    }
+}
+
+
 .main-body {
     display: flex;
     justify-content: center;
@@ -71,16 +117,21 @@ body {
     width: 317px;
 }
 
-.main-spinbanner {
+.main-card {
     display: flex;
-    justify-content: center;
+    border: 1px solid blue;
     align-items: center;
-    height: 600px;
+    margin: 100px;
 }
 
-.main-cardback {
-    background-color: rgb(247, 224, 215);
-    margin: 20px;
+.main-card-product {
+    width: 500px;
+    height: 500px;
+}
+
+.main-card__body {
+    margin: 30px;
+    border: 1px solid blue;
 }
 
 .main-footer {
