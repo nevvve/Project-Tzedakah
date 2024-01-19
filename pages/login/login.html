@@ -2,10 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="login.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2ef3bd6913.js" crossorigin="anonymous"></script>
+    
 </head> 
 <body>
     <nav class="main-navbar">
@@ -32,27 +34,27 @@
         </div>
     </nav>
     <main>
-        <div class="main-login login-center">
-            <div class ="login-name login-center">
+        <div class="login-main">
+            <div class ="login-name">
                 Login
             </div>
             <div class="login-container">
-                <div class ="">
+                <div>
                     <div class="login-box">
-                        <input type="email" placeholder="아이디" class="login-input">
+                        <input type="text" placeholder="아이디" class="login-input">
                         <input type ="password" placeholder="비밀번호" class="login-input">
                     </div>
                     <div>
-                        <input value="T"type="checkbox" class="black">로그인상태유지
+                        <input value="T"type="checkbox">로그인상태유지
                     </div>
                     <div>
-                        <button class="loginbutton">로그인</button>
+                        <button class="login-button">로그인</button>
                     </div>
-                    <div class="row">
-                        <a href="#" class="login-a -find">아이디 찾기</a>
-                        <span>|</span>
-                        <a href="#"class="login-a -find">비밀번호 찾기</a>
-                        <a href="#" class="login-a login-right">회원가입</a>
+                    <div class="">
+                            <a href="#" class="login-a -find">아이디 찾기</a>
+                            <span>|</span>
+                            <a href="#"class="login-a -find">비밀번호 찾기</a>
+                            <a href="#" class="login-a login-sign-up">회원가입</a>
                     </div>
 
                     <hr class="login-hr">
@@ -66,13 +68,57 @@
                                 <input type ="password" placeholder="비회원 주문 패스워드" class="login-input">
                             </div>
                         </div>
-                        <div><button class="loginbutton">주문조회하기</button></div>
+                        <div><button class="login-button">주문조회하기</button></div>
                     </div>
                 </div>
                 
                 </div>
             </div>
         </div>
+        <div class="login-main-app">
+            <div style="text-align:center; padding-top:0.2em"><h4>앱을 사용하고 있다면</h4><h4>아이디와 비밀번호 입력없이 로그인 할 수 있습니다.</h4></div>
+            <button class="login-button-app" >
+                <div>
+                    <img  src="../../img/로고배경x.png" width:50px height="50px">
+                    <span >로그인</span>
+                </div>
+            </button>
+            <div class="login-container">
+                <div>
+                    <div class="login-box">
+                        <input type="text" placeholder="아이디" class="login-input">
+                        <input type ="password" placeholder="비밀번호" class="login-input">
+                    </div>
+                    <div>
+                        <input value="F"type="checkbox">로그인상태유지
+                    </div>
+                    <div>
+                        <button class="login-button">로그인</button>
+                </div> 
+                
+                <hr class="login-hr">
+
+                <div>
+                    <div style="text-align:center">
+                        <h4>주문번호 조회는 모바일웹에서 불가능 합니다.</h4>
+                        <h4>PC나 앱을 이용해서 조회해 주세요</h4>
+                    </div>
+                </div>
+                <hr class="login-hr">
+                <div class="login-center">
+                    <a href="#" class="login-a -find">아이디 찾기</a>
+                    <span>|</span>
+                    <a href="#"class="login-a -find">비밀번호 찾기</a>
+                    <span>|</span>
+                    <a href="#" class="login-a -find">회원가입</a>
+                </div>
+                <div class="login-download">
+                    <a href="#"><img src="../../img/google.png" style="width:150px; height:40px;"></a>
+                    <a href="#"><img src="../../img/ios.png" style="width:150px; height:40px"></a>    
+                </div>  
+            </div>
+        </div>
+
 
     </main>
     <footer class="main-footer">
