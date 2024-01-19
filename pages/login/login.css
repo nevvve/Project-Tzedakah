@@ -132,10 +132,11 @@ body {
 }
 .login-input{
     height:50px;
+    width:100%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #e5e5e5;
-    color: mistyrose;
+    /* color: mistyrose; */
     /* box-sizing: border-box; */
     &:focus {
         outline: none;    
@@ -186,10 +187,9 @@ color: rgb(62, 62, 62);
 @media screen and(max-width:470px){
     .login-center {
         flex-direction:none;
-    }
-    .login-center{
         flex-wrap:wrap;
     }
+
     .login-name{
         display:block;
         text-align: center;
@@ -197,5 +197,8 @@ color: rgb(62, 62, 62);
     }
     nav.main-navbar a.main-navitem{
         display: none;
+    }
+    .login-container .row .login-right{
+        margin-right: 10em;
     }
 }
