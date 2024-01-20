@@ -68,3 +68,18 @@ body {
 .main-footer-line {
     height: 40px;
 }
+
+@media screen and (max-width: 700px) {
+
+    .main-navitem {
+        display: none;
+    }
+
+    .main-navbar-toggle {
+        display: block;
+    }
+
+    .main-nav-menu.active {
+        display: flex;
+    }
+}
