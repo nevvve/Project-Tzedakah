@@ -68,3 +68,36 @@ body {
 .main-footer-line {
     height: 40px;
 }
+
+@media screen and (max-width: 700px) {
+
+    .main-navitem {
+        display: none;
+    }
+
+    .main-navbar-toggle {
+        display: block;
+    }
+
+    .main-nav-menu.active {
+        display: flex;
+    }
+}
+
+.box1{
+    background: white;
+    display: inline-block;
+    position: absolute;
+    flex: 0 0 auto;
+    text-align: right;
+}
+
+.box{
+    margin-top: 100px;
+}
+
+@media screen and (max-width:48rem){
+    .box{
+      text-align: center;
+    }
+  }

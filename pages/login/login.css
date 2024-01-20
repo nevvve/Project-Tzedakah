@@ -107,14 +107,7 @@ body {
     /* height:70rem; */
     padding-top:0.4em ;
     max-width:42rem;
-    width:100%;
-}
-
-.login-box{
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 0.2em;
+    width:99%;
 }
 
 .login-input{
@@ -128,18 +121,51 @@ body {
     &:focus {
         outline: none;    
       }
+    /* &::-webkit-input-placeholder{
+        color:darkgray;
+        font-weight: 700;
+    }
+    &:focus::-webkit-input-placeholder{
+        color:rgb(62,62,62);
+    } */
 
+    
 }
-
-input::-webkit-input-placeholder {
-color:darkgray;
-font-weight: 700;
-}
-
-input:focus::-webkit-input-placeholder {
-color: rgb(62, 62, 62);
-}
-
+.div {
+    position: relative;
+    margin-top:10px;
+    }
+    
+.label {
+    position: absolute;
+    color: #aaa;
+    left: 0px;
+    font-size: 15px;
+    bottom: 8px;
+    transition: all .2s;
+    }
+.span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0%;  
+    background-color: #666;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.5s;
+    }
+    
+.login-input:focus ~ .label, .login-input:valid ~ label {
+    font-size: 16px;
+    bottom: 40px;
+    color: #666;
+    font-weight: bold;
+    }
+    
+.login-input:focus ~ .span, .login-input:valid ~ .span {
+    width: 100%;
+    }
 
 
 .login-a{
@@ -201,9 +227,17 @@ color: rgb(62, 62, 62);
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 17px;
+    margin-top: 2.5em;
 }
-@media screen and (max-width:425px){
+
+
+@media screen and (max-width:768px){
+    .login-input{
+        width:98%;
+    }
+}
+
+@media screen and (max-width:450px){
     .login-main{
         display: none;
     }
@@ -212,7 +246,18 @@ color: rgb(62, 62, 62);
         height:40rem;
 
     }
+    .login-input{
+        width:97%;
+    }
     .login-hr{
         margin:10px 0;
+    }
+}
+@media screen and (max-width:320px){
+    .login-download{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top:0.5em;
     }
 }
