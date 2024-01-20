@@ -65,7 +65,7 @@ body {
 
 
 
-/* 로그인 */
+/* 로그인 웹 */
 .login-main{
     max-width:100%;
     width:100%;
@@ -78,19 +78,6 @@ body {
     flex-direction:column;
     /* position: relative; */
 }
-.login-main-app{
-    max-width:100%;
-    max-height:90%;
-    width:100%;
-    height:40rem;
-    background-size: cover;
-    background-color: white;
-    display: none;
-    align-items: center;
-    flex-direction:column;
-
-}
-
 .login-name{
     font-size: 4em;
     font-weight: 700;
@@ -99,10 +86,7 @@ body {
     position: relative;
     
 }
-.login-name-app{
-    display: flex;
-    justify-content: center;
-}
+
 .login-container{
     /* height:70rem; */
     padding-top:0.4em ;
@@ -128,6 +112,17 @@ body {
     &:focus::-webkit-input-placeholder{
         color:rgb(62,62,62);
     } */
+
+    &:focus ~ .label, &:valid ~ .label {
+        font-size: 16px;
+        bottom: 40px;
+        color: #666;
+        font-weight: bold;
+        }
+        
+    &:focus ~ .span, &:valid ~ .span {
+        width: 100%;
+        }
 
     
 }
@@ -156,7 +151,7 @@ body {
     transition: 0.5s;
     }
     
-.login-input:focus ~ .label, .login-input:valid ~ label {
+/* .login-input:focus ~ .label, .login-input:valid ~ label {
     font-size: 16px;
     bottom: 40px;
     color: #666;
@@ -165,24 +160,7 @@ body {
     
 .login-input:focus ~ .span, .login-input:valid ~ .span {
     width: 100%;
-    }
-
-
-.login-a{
-    text-decoration: none;
-}
-.login-a:hover{
-    font-weight: 700;
-}
-.-find{
-    font-size:15px;
-    color:#888;
-}
-.login-sign-up{
-    float:right;
-    font-size:15px;
-    color:#222; */
-}
+    } */
 
 .login-button{
     font-size: 18px;
@@ -193,11 +171,53 @@ body {
     border:1px;
     border-radius: 10px;
     margin:0.5em 0;   
+
+    &:hover{
+        font-weight:600;
+        transform: scale(1.01)
+    }
 }
-.login-button:hover{
-    font-weight:600;
-    transform: scale(1.01)
+.login-a{
+    text-decoration: none;
+
+    &:hover{
+        font-weight: 700;
+    }
 }
+
+.-find{
+    font-size:15px;
+    color:#888;
+}
+.login-sign-up{
+    float:right;
+    font-size:15px;
+    color:#222; 
+}
+
+.login-hr{
+    margin:30px 0;
+}
+
+/* 로그인 모바일 */
+.login-main-app{
+    max-width:100%;
+    max-height:90%;
+    width:100%;
+    height:40rem;
+    background-size: cover;
+    background-color: white;
+    display: none;
+    align-items: center;
+    flex-direction:column;
+
+}
+
+.login-name-app{
+    display: flex;
+    justify-content: center;
+}
+
 .login-button-app{
     font-size: 18px;
     background-color:seashell;
@@ -213,11 +233,6 @@ body {
     justify-content: center;
     align-items: center;
     }
-
-
-.login-hr{
-    margin:30px 0;
-}
 
 .login-center{
     display: flex;
