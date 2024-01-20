@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'manrope'; /*font 이름*/
+    font-style: 'normal'; /* font 스타일 정의 (기울임, 일반) */
+    font-weight: 400; /* font 굵기 정의 */
+    /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
+    src: url('./fonts/Manrope/Manrope-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'notosanskr'; /*font 이름*/
+    font-style: 'normal'; /* font 스타일 정의 (기울임, 일반) */
+    font-weight: 400; /* font 굵기 정의 */
+    src: url('./fonts/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: manrope,notosanskr;
+    background-color: rgb(247, 224, 215);
+    margin: 0px;
+}
+
+.main-navitem {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    font-weight: 700;
+}
+
+.main-navlogo {
+    height: 55px;
+    width: 135px;
+    /* border: 1px solid blue; */
+}
+
+.main-navbar {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-footer {
+    /* border: 1px solid blue; */
+    height: 280px;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    bottom: 0px;
+    color: rgb(32, 32, 32);
+}
+.main-footer-item {
+    font-size: 13px;
+    padding: 0 20px 0 20px;
+}
+
+.main-footer-position {
+    margin-left: 18px;
+}
+
+/* 
+.main-footer-line {
+    height: 40px;
+} */
+
+
+
+
+/* 회원가입*/
+.sign-container{
+    max-width:100%;
+    width:100%;
+    height:57rem;
+    max-height:100%;
+    background-size: cover;
+    background-color: #f5f6f7;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    padding-bottom: 20px;
+}
+.sign-name{
+    font-size: 3em;
+    font-weight: 700;
+    top:0.4em;
+    padding-bottom:0.7em;
+    position: relative;
+    
+}
+.sign-profile{
+    display: flex;
+    border: 25px;
+    position:relative
+}
+.sign-img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background:#f5f6f7 ;
+
+}
+.sign-circle{
+    border:8px solid #e6e5e5;
+    background-color:#e6e5e5;
+    border-radius:50%;
+    right:0.5sem;
+}
+.sign-camera{
+    width: 33px;
+    height:35px;
+    position:absolute;
+    border:6px solid #e6e5e5;
+    background-color:#e6e5e5;
+    border-radius:50%;
+    right:0.5sem;
+    left:3.1rem;
+    bottom:-7px;
+    
+}
+.sign-input{
+    margin-top:0.1em;
+    font-size:1rem;
+    height:45px;
+    width:98%;
+    background-color:white;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding-left: 10px;
+    &:focus {
+        outline: none;    
+      }
+    
+}
+.sign-input-radio{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column ;
+}
+.sign-input-radio label{
+    font-size: 16px;
+}
+[type="radio"]{
+    border:1px solid gray;
+    border-radius: 50%;;
+    width:1.25em;
+    height:1.25em;
+}
+[type="radio"],span{
+    vertical-align: middle;
+}
+
+
+.icon-blue{
+    color:blue;
+}
+.sign-button{
+    font-size: 18px;
+    background-color:rgb(187, 187, 187);
+    color:rgb(57, 57, 57);
+    font-weight: 700;
+    width:100%;
+    height: 54px;
+    border:1px;
+    border-radius: 10px;
+    margin:0.5em 0 0 0;   
+}
+
+
+@media screen and (max-width:768px){
+    .sign-container{
+        height:52rem;
+    }
+    .sign-name{
+        font-size: 2.3em;
+       
+    }
+
+    .sign-input{
+    font-size:15px;
+    height:40px;
+    width:95%;
+    }
+    .sign-container label{
+        font-size: 15px;
+    }
+    .sign-button{
+        height: 43px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .sign-container{
+        height:48rem;
+    }
+    .sign-name{
+        font-size: 1.8em;
+       
+    }
+    .sign-input-radio{
+        padding:0.7em 0;
+        display:block;
+        justify-content: none;
+        flex-direction:none ;
+    }
+
+    .sign-container label{
+        font-size: 13px;
+    }
+    .sign-input{
+        font-size:12px;
+        height:30px;
+        }
+    .sign-button{
+        height: 38px;}
+}
+

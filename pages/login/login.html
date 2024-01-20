@@ -34,15 +34,23 @@
         </div>
     </nav>
     <main>
+        <!-- web -->
         <div class="login-main">
             <div class ="login-name">
                 Login
             </div>
+            
             <div class="login-container">
                 <div>
-                    <div class="login-box">
-                        <input type="text" placeholder="아이디" class="login-input">
-                        <input type ="password" placeholder="비밀번호" class="login-input">
+                    <div class="div">
+                        <input type="text" class="login-input" required>
+                        <label class="label">아이디</label>
+                        <span class="span"></span>
+                    </div>
+                    <div class="div">
+                        <input type="password" class="login-input" required>
+                        <label class="label">비밀번호</label>
+                        <span class="span"></span>
                     </div>
                     <div>
                         <input value="T"type="checkbox">로그인상태유지
@@ -54,7 +62,7 @@
                             <a href="#" class="login-a -find">아이디 찾기</a>
                             <span>|</span>
                             <a href="#"class="login-a -find">비밀번호 찾기</a>
-                            <a href="#" class="login-a login-sign-up">회원가입</a>
+                            <a href="./sign-up.html" class="login-a login-sign-up">회원가입</a>
                     </div>
 
                     <hr class="login-hr">
@@ -62,19 +70,29 @@
                 <div>
                     <div><h4>비회원일 경우, 주문번호로 조회가 가능합니다.</h4></div>
                     <div class="row">
-                            <div class="login-box">
-                                <input type="email" placeholder="주문자명" class="login-input">
-                                <input type ="text" placeholder="주문번호" class="login-input">
-                                <input type ="password" placeholder="비회원 주문 패스워드" class="login-input">
-                            </div>
+                        <div class="div">
+                            <input type="email"class="login-input" required>
+                            <label class="label">주문자명</label>
+                            <span class="span"></span>
                         </div>
+                        <div class="div">
+                            <input type ="text" class="login-input" required>
+                            <label class="label">주문번호</label>
+                            <span class="span"></span>
+                        </div>
+                        <div class="div">
+                            <input type="password" class="login-input" required>
+                            <label class="label">비회원 주문 패스워드</label>
+                            <span class="span"></span>
+                        </div>
+
+                    </div>
                         <div><button class="login-button">주문조회하기</button></div>
                     </div>
                 </div>
-                
-                </div>
             </div>
         </div>
+        <!-- mobile -->
         <div class="login-main-app">
             <div style="text-align:center; padding-top:0.2em"><h4>앱을 사용하고 있다면</h4><h4>아이디와 비밀번호 입력없이 로그인 할 수 있습니다.</h4></div>
             <button class="login-button-app" >
@@ -110,7 +128,7 @@
                     <span>|</span>
                     <a href="#"class="login-a -find">비밀번호 찾기</a>
                     <span>|</span>
-                    <a href="#" class="login-a -find">회원가입</a>
+                    <a href="./sign-up.html" class="login-a -find">회원가입</a>
                 </div>
                 <div class="login-download">
                     <a href="#"><img src="../../img/google.png" style="width:150px; height:40px;"></a>
