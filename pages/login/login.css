@@ -64,72 +64,59 @@ body {
 
 
 
-/* 로그인 */
-.login-a{
-    text-decoration: none;
-}
-.login-a:hover{
-    font-weight: 700;
-}
-.login-right{
-    float:right;
-    font-size:15px;
-    color:#222;
-}
-.-find{
-    font-size:15px;
-    color:#888;
-}
 
-.main-login{
+/* 로그인 */
+.login-main{
     max-width:100%;
     width:100%;
     height:50rem;
-    /* background-repeat: no-repeat;
-    background-position:  center ; */
     background-size: cover;
     background-color: white;
-    padding:1em
-}
-.login-center{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction:column;
-    position: relative;
+    /* position: relative; */
+}
+.login-main-app{
+    max-width:100%;
+    max-height:90%;
+    width:100%;
+    height:40rem;
+    background-size: cover;
+    background-color: white;
+    display: none;
+    align-items: center;
+    flex-direction:column;
 
 }
-
 
 .login-name{
     font-size: 4em;
-    color:black;
     font-weight: 700;
-    position: absolute;
-    top:1em;
-    padding-bottom: 1.3em;
+    top:0.8em;
+    margin-bottom: 1em;
+    position: relative;
     
 }
-.login-container{
-    height:88rem;
-    max-width:42rem;
-    width:100%;
-    /* padding:0 0 15 15px; */
-}
-
-.login-center{
+.login-name-app{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction:column;
-    position: relative;
-
 }
+.login-container{
+    /* height:70rem; */
+    padding-top:0.4em ;
+    max-width:42rem;
+    width:100%;
+}
+
 .login-box{
     width:100%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 0.2em;
 }
+
 .login-input{
     height:50px;
     width:100%;
@@ -144,8 +131,6 @@ body {
 
 }
 
-
-
 input::-webkit-input-placeholder {
 color:darkgray;
 font-weight: 700;
@@ -157,10 +142,23 @@ color: rgb(62, 62, 62);
 
 
 
+.login-a{
+    text-decoration: none;
+}
+.login-a:hover{
+    font-weight: 700;
+}
+.-find{
+    font-size:15px;
+    color:#888;
+}
+.login-sign-up{
+    float:right;
+    font-size:15px;
+    color:#222; */
+}
 
-
-
-.loginbutton{
+.login-button{
     font-size: 18px;
     background-color:#f6f7f9;
     text-align: center;
@@ -170,35 +168,51 @@ color: rgb(62, 62, 62);
     border-radius: 10px;
     margin:0.5em 0;   
 }
-.loginbutton:hover{
+.login-button:hover{
     font-weight:600;
-    transform: scale(1.05)
+    transform: scale(1.01)
 }
+.login-button-app{
+    font-size: 18px;
+    background-color:seashell;
+    font-weight: 700;
+    width:100%;
+    height: 54px;
+    border:1px;
+    border-radius: 10px;
+    margin:0.5em 0;   
+}
+.login-button-app div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
 
-.-find{
-    font-size:15px;
-    color:#888;
-}
 .login-hr{
     margin:30px 0;
 }
 
-@media screen and(max-width:470px){
-    .login-center {
-        flex-direction:none;
-        flex-wrap:wrap;
-    }
-
-    .login-name{
-        display:block;
-        text-align: center;
-
-    }
-    nav.main-navbar a.main-navitem{
+.login-center{
+    display: flex;
+    justify-content: space-around;
+}
+.login-download{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 17px;
+}
+@media screen and (max-width:425px){
+    .login-main{
         display: none;
     }
-    .login-container .row .login-right{
-        margin-right: 10em;
+    .login-main-app{
+        display: block;
+        height:40rem;
+
+    }
+    .login-hr{
+        margin:10px 0;
     }
 }

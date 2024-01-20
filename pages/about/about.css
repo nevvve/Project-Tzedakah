@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'manrope'; /*font 이름*/
+    font-style: 'normal'; /* font 스타일 정의 (기울임, 일반) */
+    font-weight: 400; /* font 굵기 정의 */
+    /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
+    src: url('./fonts/Manrope/Manrope-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'notosanskr'; /*font 이름*/
+    font-style: 'normal'; /* font 스타일 정의 (기울임, 일반) */
+    font-weight: 400; /* font 굵기 정의 */
+    src: url('./fonts/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: manrope,notosanskr;
+    background-color: rgb(247, 224, 215);
+    margin: 0px;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-navitem {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    font-weight: 700;
+}
+
+.main-navlogo {
+    height: 55px;
+    width: 135px;
+    border: 1px solid blue;
+}
+
+.main-navbar {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-footer {
+    /* border: 1px solid blue; */
+    height: 280px;
+    width: 100%;
+    position: absolute;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    bottom: 0px;
+    color: rgb(32, 32, 32);
+}
+
+.main-footer-item {
+    font-size: 13px;
+    padding: 0 20px 0 20px;
+}
+
+.main-footer-position {
+    margin-left: 18px;
+}
+
+
+.main-footer-line {
+    height: 40px;
+}
