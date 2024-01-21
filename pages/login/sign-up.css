@@ -65,6 +65,7 @@ body {
 
 
 
+
 /* 회원가입*/
 .sign-container{
     max-width:100%;
@@ -184,6 +185,22 @@ body {
         height: 43px;
     }
 }
+@media screen and (max-width: 685px) {
+
+    .main-navitem {
+        display: none;
+    }
+
+    .main-navbar-toggle_button {
+        display: block;
+    }
+
+    .main-nav-menu.active {
+        display: flex;
+    }
+
+}
+
 
 @media screen and (max-width:450px){
     .sign-container{
