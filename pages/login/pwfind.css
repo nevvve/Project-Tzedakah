@@ -99,14 +99,12 @@ body {
 }
 .pwFind-input{
     border:none;
-    margin-top:0.1em;
     font-size:15px;
     height:45px;
     width:350px;
-    background-color:#ece9e9;
+    background-color:#f9f6f6;
     border: none;
     border-bottom: 1px solid#ece9e9;
-    border-radius: 5px;
     padding-left: 10px;
 }
 .pwFind-input:focus{
@@ -120,22 +118,21 @@ body {
     justify-content: flex-end;
 }
 .pwFind-button{
-    font-size: 18px;
+    font-size: 0.9rem;
     font-weight: 700;
-    background-color:#ece9e9;
-    border-radius: 5px;
+    background-color:#f9f6f6;
     width:100px;
     height:50px;
     position: absolute;
     /* right:40rem; */
-    top:13.2em;   
-    box-shadow: 0 1px 1px rgba(0,0,0,.1);
-    border: 1px solid #dadce0;
+    top:19.2em;   
+    box-shadow: 3PX 3px 3px rgba(0,0,0,.1);
+    border: 1px solid#f9f6f6;
+    &:hover{
+            color: #858996;
+    }
 }
-.pwFind-button:hover{
 
-    color: #858996;
-}
 
 
 .pwFind2{

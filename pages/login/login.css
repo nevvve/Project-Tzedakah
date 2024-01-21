@@ -163,19 +163,38 @@ body {
     } */
 
 .login-button{
-    font-size: 18px;
-    background-color:#f6f7f9;
-    text-align: center;
-    width:100%;
-    height: 54px;
-    border:1px;
-    border-radius: 10px;
-    margin:0.5em 0;   
+    width: 94%;
+    display: inline-block;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+    /* font-size: 0.625rem; */
+    letter-spacing: 0.3em;
+    color: rgba(108, 108, 108, 0.7);
+    border-radius: 0;
+    padding: 18px 80px 20px;
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(255, 243, 239, 0.8), rgba(253, 233, 226, 0.938), rgba(34,34,34,0), rgba(34,34,34,0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    margin: 0.625rem;
+    border: none;
+    border: 1px solid rgba(108, 108, 108, 0.7);
+  
 
-    &:hover{
-        font-weight:600;
-        transform: scale(1.01)
-    }
+    &:hover {
+        color: rgba(86, 85, 85, 0.7);
+        border: 1px solid rgba(223,190,106,0);
+        /* color: $white; */
+        background-position: 99% 50%;
+        font-weight: 700;
+        font-size:0.8rem;
+      }
+
+
+
+    
 }
 .login-a{
     text-decoration: none;
@@ -211,6 +230,9 @@ body {
     align-items: center;
     flex-direction:column;
 
+
+    
+
 }
 
 .login-name-app{
@@ -219,14 +241,33 @@ body {
 }
 
 .login-button-app{
-    font-size: 18px;
-    background-color:seashell;
-    font-weight: 700;
-    width:100%;
-    height: 54px;
-    border:1px;
-    border-radius: 10px;
-    margin:0.5em 0;   
+    width: 93%;
+    display: inline-block;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.3em;
+    color: rgba(108, 108, 108, 0.7);
+    border-radius: 0;
+    background: linear-gradient(270deg, rgba(255, 234, 227, 0.8), rgba(255, 215, 201, 0.938), rgba(34,34,34,0), rgba(34,34,34,0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    margin: 0.625rem;
+    border: none;
+    border: 1px solid rgba(108, 108, 108, 0.7);
+  
+
+    &:focus {
+        color: rgba(86, 85, 85, 0.7);
+        border: 1px solid rgba(223,190,106,0);
+        /* color: $white; */
+        background-position: 99% 50%;
+        font-weight: 700;
+        font-size:0.8rem;
+      }
+
+
 }
 .login-button-app div{
     display: flex;
@@ -262,7 +303,7 @@ body {
 
     }
     .login-input{
-        width:97%;
+        width:95%;
     }
     .login-hr{
         margin:10px 0;
