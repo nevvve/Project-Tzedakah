@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'manrope'; /*font 이름*/
+    font-style: 'normal'; /* font 스타일 정의 (기울임, 일반) */
+    font-weight: 400; /* font 굵기 정의 */
+    /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
+    src: url('./fonts/Manrope/Manrope-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'notosanskr'; /*font 이름*/
+    font-style: 'normal'; /* font 스타일 정의 (기울임, 일반) */
+    font-weight: 400; /* font 굵기 정의 */
+    src: url('./fonts/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: manrope,notosanskr;
+    background-color: rgb(247, 224, 215);
+    margin: 0px;
+}
+
+.main-navitem {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    font-weight: 700;
+}
+
+.main-navlogo {
+    height: 55px;
+    width: 135px;
+    /* border: 1px solid blue; */
+}
+
+.main-navbar {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-footer {
+    /* border: 1px solid blue; */
+    height: 280px;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    bottom: 0px;
+    color: rgb(32, 32, 32);
+}
+.main-footer-item {
+    font-size: 13px;
+    padding: 0 20px 0 20px;
+}
+
+.main-footer-position {
+    margin-left: 18px;
+}
+
+/* 
+.main-footer-line {
+    height: 40px;
+} */
+*{
+    box-sizing:border-box;
+}
+.idfind-back{
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+}
+.idfind-back-app{
+    height:110px;
+    background-color: rgb(253, 253, 253);
+    display: none;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+}
+.idFind{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+}
+
+.idFind-name{
+    font-size:1.5rem;
+    font-weight:bold;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+
+}
+.idFind2{
+    position: relative;
+    width: 560px !important;
+    padding: 30px 90px;
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    font-size: 16px;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+}
+.idFind2 h4{
+    margin-block-end:0.4em;
+}
+.idFind-input{
+    border:none;
+    margin-top:0.1em;
+    font-size:15px;
+    height:45px;
+    width:350px;
+    background-color:#f9f6f6;
+    border: none;
+    border-bottom: 1px solid#ece9e9;
+    padding-left: 10px;
+}
+.idFind-input:focus{
+    outline: none; 
+}
+.idFind-button{
+    font-weight: 700;
+    font-size: 0.9rem;
+    background-color:#f9f6f6;
+    width:100px;
+    height:50px;
+    position: absolute;
+    /* right:40rem; */
+    top:18rem;
+    /* right:41rem;    */
+    box-shadow: 2PX 2px 2px rgba(0,0,0,.1);
+    border: 1px solid #f9f6f6;
+    &:hover{
+            color: #858996;
+    }
+}
+
+
+
+.idFind-center{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media screen and (max-width:768px){
+
+}
+
+@media screen and (max-width:576px){
+    .idfind-back{
+        display:none;
+    }
+    .idfind-back-app{
+        display: block;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width:320px){
+    .idfind-back-app{
+        height:128px
+    }
+}
