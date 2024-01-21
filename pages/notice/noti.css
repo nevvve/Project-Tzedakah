@@ -25,3 +25,20 @@ section { padding-left: 171px; padding-right: 171px; height: 80px;}
 .notice-nav li a { color:#363636; font-size:15px;}
 
 .notice-nav li a:hover { color:#fbb588; }
+
+
+@media screen and (max-width: 685px) {
+
+  .main-navitem {
+      display: none;
+  }
+
+  .main-navbar-toggle_button {
+      display: block;
+  }
+
+  .main-nav-menu.active {
+      display: flex;
+  }
+
+}

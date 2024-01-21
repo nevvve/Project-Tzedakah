@@ -166,3 +166,19 @@ body {
         height:128px
     }
 }
+
+@media screen and (max-width: 685px) {
+
+    .main-navitem {
+        display: none;
+    }
+
+    .main-navbar-toggle_button {
+        display: block;
+    }
+
+    .main-nav-menu.active {
+        display: flex;
+    }
+
+}
