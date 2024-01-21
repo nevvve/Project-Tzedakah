@@ -78,7 +78,7 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 685px) {
 
     .main-navitem {
         display: none;
@@ -112,6 +112,8 @@ body {
     margin: 5px;
     height: 30%;
     width: 30%;
+    min-width: 135px;
+    min-height: 55px;
 }
 
 
@@ -129,6 +131,8 @@ body {
 .main-banner_img {
     height: 100%;
     width: 100%;
+    min-width: 472px;
+    min-height: 472px;
 }
 
 .main-padding-div {
@@ -185,11 +189,11 @@ body {
 }
 
 .slide_prev_button {
-    left: 5px;
+    left: 2px;
   }
 
 .slide_next_button {
-    right: 5px;
+    right: 2px;
   }
   
 .slide_button {
@@ -198,10 +202,11 @@ body {
     align-items: center;
     position: absolute;
     top: calc(50%);
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
     color: #5f5c5c;
+    background-color: rgb(251, 220, 209);
 }
 
 .main-page_ul {
