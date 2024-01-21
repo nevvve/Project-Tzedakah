@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign-up</title>
+    <title>아이디찾기</title>
+    <script src="../../index.js" defer></script>
     <link href="../../main.css" rel="stylesheet" type="text/css" />
-    <link href="./sign-up.css" rel="stylesheet">
+    <link href="./idfind.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2ef3bd6913.js" crossorigin="anonymous"></script>
     
 </head> 
@@ -44,58 +45,39 @@
             <li><a href="./pages/notice/notice.html" class="main-nav-menuitems">NOTICE</a></li>
             <li><a href="./pages/campaign/campaing.html" class="main-nav-menuitems">CAMPAIGN</a></li>
             <li><a href="./pages/login/login.html"  class="main-nav-menuitems">LOGIN</a></li>
-        </ul>
+        </ul>>
     <main>
-        <div class="sign-container">
-            <div class ="sign-name">
-                SIGN UP
-            </div>
-            <div class="sign-profile">
-                <img src="https://moohas.co.kr/common/img/default_profile.png" class="sign-img">
-                <div class="sign-camera">
-                    <div class="sign-circle"><i class="fa-solid fa-camera"></i></div>
+        <div class="idfind-back">
+            <div class="idFind">
+                <div class ="idFind-name">
+                        아이디찾기
                 </div>
             </div>
-            <div>
+            <div class="idFind2">
                 <div>
-                    <p>
-                        <b><label>아이디<span class="icon-blue">*</span></label></b>
-                        <input type="email" class="sign-input "placeholder="최소 3자이상 영문자, 숫자, _만 입력가능" >
-                    </p>
-                    <p>
-                        <b><label>비밀번호<span class="icon-blue">*</span></label></b>
-                        <input type="password" class="sign-input "placeholder="비밀번호">
-                        <input type="password" class="sign-input "placeholder="비밀번호 확인" >
-                    </p>
+                    <label><h4>이름</h4></label>
+                    <input type="text" class="idFind-input">
                 </div>
-
-                <p>
-                    <b><label>이름<span class="icon-blue">*</span></label></b>
-                    <input type="text" class="sign-input "placeholder="이름을 입력하세요" >    
-                </p>
-                <p class="sign-input-radio">
-                    <b><span style="margin-top:10px">성별</span></b>
-                    <label><input type="radio" name="gender"/><span>남성</span></label>
-                    <label><input type="radio" name="gender"/><span>여성</span></label>
-                </p>
-                <p>
-                    <b><label>연락처<span class="icon-blue">*</span><span> ex: 010 0000 0000 </span></label></b>
-                    <input type="tel" class="sign-input "placeholder=" -빼고 입력해주세요" >    
-                </p>
-                <p>
-                    <b><label>주소<span class="icon-blue">*</span></label></b>
-                    <input type="text" class="sign-input "placeholder="서울특별시 강서구 00로 00길">
-                    <input type="text" class="sign-input "placeholder="101동101호">    
-                </p>
+                <div>
+                    <label><h4>휴대폰 번호로 찾기</h4></label>
+                    <input type="text" class="idFind-input">
+                </div>
             </div>
-
-            <b>
-                <button class="sign-button">가입하기</button>
-                <b><p>가입하시면 <a href="#">이용약관</a>에 동의하게 됩니다.</p></b>
+            <div class="idFind-center">
+                <button class="idFind-button">확인</button>
             </div>
+    
+        </div>
+        <div class="idfind-back-app">
+            <hr>
+            <h4>아이디 찾기는 모바일웹에서는 불가능합니다.</h4>
+            <h4>PC나 앱을 이용해서 찾아주세요</h4>
+            <hr>
+        </div>
 
-        </div>  
+
     </main>
+
     <!-- footer -->
     <footer class="main-footer">
         <div class="main-footer-line">

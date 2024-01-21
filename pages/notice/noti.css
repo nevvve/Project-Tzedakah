@@ -1,0 +1,27 @@
+ul,li { list-style: none;}
+
+a { text-decoration: none; }
+
+main { padding-left: 160px; padding-right: 160px; }
+
+.notice-padding { height: 30px;}
+
+.notice-title > span { font-size: 36px; letter-spacing: 2px;}
+
+.notice-title > p { font-size: 13px; letter-spacing: 1px;}
+
+.notice-padding2 { height: 50px;}
+
+section { padding-left: 171px; padding-right: 171px; height: 80px;}
+
+.notice-inner { 
+  padding-left: 171px; 
+  padding-right: 171px;
+  display: flex;
+}
+
+.notice-nav li{ padding: 7.5px 0 7.5px 15px; }
+
+.notice-nav li a { color:#363636; font-size:15px;}
+
+.notice-nav li a:hover { color:#fbb588; }
