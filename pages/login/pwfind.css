@@ -61,6 +61,7 @@ body {
 .main-footer-line {
     height: 40px;
 } */
+
 *{
     box-sizing:border-box;
 }
@@ -148,7 +149,21 @@ body {
 
 
 }
+@media screen and (max-width: 685px) {
 
+    .main-navitem {
+        display: none;
+    }
+
+    .main-navbar-toggle_button {
+        display: block;
+    }
+
+    .main-nav-menu.active {
+        display: flex;
+    }
+
+}
 @media screen and (max-width:600px){
     .pwfind-back{
         display:none;
@@ -160,7 +175,10 @@ body {
 
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:599px){
+    .pwfind-back-app{
+        height:114px;
+    }
 }
 @media screen and (max-width:342px){
     .pwfind-back-app{
