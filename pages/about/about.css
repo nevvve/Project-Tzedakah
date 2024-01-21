@@ -267,22 +267,3 @@ body {
   .floating-text:hover {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
   }
-
-  @media screen and (max-width: 685px) {
-
-    .main-navitem {
-        display: none;
-    }
-
-    .main-navbar-toggle_button {
-        display: block;
-    }
-
-    .main-nav-menu.active {
-        display: flex;
-    }
-
-}
-
-  color: rgb(32, 32, 32);
-

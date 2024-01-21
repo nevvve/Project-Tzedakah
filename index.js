@@ -1,3 +1,13 @@
+
+/* navbar-under 700 width */
+const mainNavToggle = document.querySelector('.main-navbar-toggle_button')
+const mainNavMenu = document.querySelector('.main-nav-menu')
+
+mainNavToggle.addEventListener('click', () => {
+  mainNavMenu.classList.toggle('active')
+})
+
+
 /* slide */
 
 const slide = document.querySelector(".main-slide");
@@ -178,11 +188,3 @@ for (let i = 0; i < maxSlide; i++) {
   });
 }
 
-
-/* navbar-under 700 width */
-const mainNavToggle = document.querySelector('.main-navbar-toggle_button')
-const mainNavMenu = document.querySelector('.main-nav-menu')
-
-mainNavToggle.addEventListener('click', () => {
-  mainNavMenu.classList.toggle('active')
-})
