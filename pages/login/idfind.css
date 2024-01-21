@@ -19,65 +19,6 @@ body {
     margin: 0px;
 }
 
-.main-navitem {
-    text-decoration: none;
-    color: rgb(32, 32, 32);
-    font-weight: 700;
-    padding: 7px;
-}
-
-.main-navitem:hover {
-    background-color: rgb(231, 172, 23);
-    color: #FFF;
-    font-weight: 900;
-}
-
-.main-navlogo {
-    height: 55px;
-    width: 135px;
-}
-
-.main-navbar {
-    height: 90px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.main-nav-menu {
-    display: none;
-    flex-direction: column;
-    list-style-type: none;
-    align-items: flex-start;
-    margin: 0;
-}
-
-.main-nav-menu > li {
-    width: 100%;
-    text-align: center;
-    margin: 10px 10px 10px 10px;
-}
-
-.main-nav-menuitems {
-    text-decoration: none;
-    color: rgb(32, 32, 32);
-    padding: 7px;
-}
-
-.main-nav-menuitems:hover {
-    background-color: rgb(231, 172, 23);
-    color: #FFF;
-    font-weight: 900;
-}
-
-.main-navbar-toggle_button {
-    display: none;
-    text-decoration: none;
-    color: rgb(32, 32, 32);
-    cursor: pointer;
-}
-
 *{
     box-sizing:border-box;
 }
@@ -198,20 +139,4 @@ body {
     .idfind-back-app{
         height:128px
     }
-}
-
-@media screen and (max-width: 685px) {
-
-    .main-navitem {
-        display: none;
-    }
-
-    .main-navbar-toggle_button {
-        display: block;
-    }
-
-    .main-nav-menu.active {
-        display: flex;
-    }
-
 }
